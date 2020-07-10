@@ -24,8 +24,14 @@ api.add_resource(Store, '/store/<string:name>')
 api.add_resource(Item, '/item/<string:name>')
 api.add_resource(ItemList, '/items')
 api.add_resource(StoreList, '/stores')
-
 api.add_resource(UserRegister, '/register')
+
+
+@app.route('/testpoint')
+def get():
+            return jsonify({"message": "addd stuff here"})
+
+
 
 if __name__ == '__main__':
     from db import db
