@@ -4,15 +4,10 @@ from models.item import ItemModel
 
 class Stuff(Resource):
     parser = reqparse.RequestParser()
-    parser.add_argument('STUFF',
+    parser.add_argument('stuff',
         type=str,
         required=True,
         help="Put Stuff Here"
-    )
-    parser.add_argument('STUFF',
-        type=str,
-        required=True,
-        help="Every item needs more stuff."
     )
 
     @jwt_required()
