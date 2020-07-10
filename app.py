@@ -8,7 +8,7 @@ from security import authenticate, identity
 from resources.user import UserRegister
 from resources.item import Item, ItemList
 from resources.store import Store, StoreList
-from resource.stuff import Stuff, StuffList
+from resources.stuff import Stuff, StuffList
 
 app = Flask(__name__)
 
