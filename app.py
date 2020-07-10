@@ -25,11 +25,8 @@ api.add_resource(Item, '/item/<string:name>')
 api.add_resource(ItemList, '/items')
 api.add_resource(StoreList, '/stores')
 api.add_resource(UserRegister, '/register')
-
-
-@app.route('/testpoint')
-def get():
-            return jsonify({"message": "addd stuff here"})
+api.add_resource(Stuff, '/stuff/<string:name>')
+api.add_resource(StuffList, '/stuffs')
 
 
 
